@@ -1,82 +1,561 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
-	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Dosis:wght@500;600;800&family=Mukta:wght@400;500;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <title>FIGMA | Макеты для верстки — Верстка страницы</title>
+    <meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
 </head>
+
 <body>
-		<!-- Начало: Данный блок удалять нельзя -->
-		<style>
-			.maketforfigma{
-				flex: 0 0 auto;
-				/*background: #303b44;*/
-				/*background: #5CDB95;*/
-				background: #313a46;
-				font-weight: bold;
-				display: flex;
-			}
-			.maketforfigma img{
-				border-radius: 10px;
-				margin: 4px 0 0 4px;
-			}
-			.maketforfigma p {
-				/*color: #fff;*/
-				/*color: #05386B;*/
-				color: #98a6ad;
-				text-decoration: none;
-				letter-spacing: .01875rem;
-				font-size: .775rem;
-				padding: 0 10px;
-				line-height: 0.70rem;
-			}
+    <!-- Начало: Данный блок удалять нельзя -->
+    <style>
+        .maketforfigma {
+            flex: 0 0 auto;
+            /*background: #303b44;*/
+            /*background: #5CDB95;*/
+            background: #313a46;
+            font-weight: bold;
+            display: flex;
+        }
 
-			.maketforfigma p > a {
-				/*color: #08ff00;*/
-				/*color: #EDF5E1;*/
-				color: #bbe4f0;
-				font-weight: bold;
-			}
-			.maketforfigma p > a:hover {
-				/*color: #ffa001*/
-				/*color: #379683*/
-				color: #ffffff
-			}
+        .maketforfigma img {
+            border-radius: 10px;
+            margin: 4px 0 0 4px;
+        }
 
-			.main{
-				flex: 1 0 auto;
-			}
+        .maketforfigma p {
+            /*color: #fff;*/
+            /*color: #05386B;*/
+            color: #98a6ad;
+            text-decoration: none;
+            letter-spacing: .01875rem;
+            font-size: .775rem;
+            padding: 0 10px;
+            line-height: 0.70rem;
+        }
 
-			html{
-				height: 100%;
-			}
+        .maketforfigma p>a {
+            /*color: #08ff00;*/
+            /*color: #EDF5E1;*/
+            color: #bbe4f0;
+            font-weight: bold;
+        }
 
-			body{
-				display: flex;
-				flex-direction: column;
-				height: 100%;
-				padding: 0;
-				margin: 0;
-			}
-		</style>
-		<div class="maketforfigma">
-			<a href="https://t.me/s/FigmaToHTML" target="_blank">
-				<img src="logo.png">
-			</a>
-			<div>
-				<p>
-					Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
-				</p>
-				<p>
-					При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
-					<a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
-				</p>
-			</div>
-		</div>
-		<!-- Конец -->
+        .maketforfigma p>a:hover {
+            /*color: #ffa001*/
+            /*color: #379683*/
+            color: #ffffff
+        }
 
-		<div class="main">
-			В данном блоке размещается верстка
-		</div>
+        .main {
+            flex: 1 0 auto;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <div class="maketforfigma">
+        <a href="https://t.me/s/FigmaToHTML" target="_blank">
+            <img src="logo.png">
+        </a>
+        <div>
+            <p>
+                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+                    href="https://t.me/s/FigmaToHTML/2" target="_blank">FIGMA | Макеты для верстки</a>
+            </p>
+            <p>
+                При помощи бота <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">FIGMA | 💵 Верстай
+                    за деньги</a> пользователь получил оплату за верстку этого сайта и попал в рейтинги сайта
+                <a href="https://maketforfigma.ru" target="_blank">FIGMA — Макеты для верстки</a>
+            </p>
+        </div>
+    </div>
+    <!-- Конец -->
+
+    <div class="main">
+
+        <div class="intro__container">
+
+            <header class="header">
+                <img src="./img/header_logo.svg" alt="icon" class="header__logo">
+
+                <nav class="header__navbar">
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_home.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">Home</a>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_shop.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">Shop</a>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_blog.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">BLog</a>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_about.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">About us</a>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_gallery.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">Gallery</a>
+                        </div>
+                    </div>
+
+                    <div class="header__navbar-item">
+                        <div class="header__navbar-item-wrapper">
+                            <img src="./img/navbar-item-icon_location.svg" alt="icon" class="navbar-item-icon">
+                            <a href="#" class="navbar-item-link">Location</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <intro class="intro">
+                <nav class="intro__navbar">
+                    <div class="intro__navbar-auth">
+                        <div class="navbar-auth-login login">
+                            <a href="#" class="auth-login">LOGIN</a>
+                            <img src="./img/auth-login-icon.svg" alt="icon" class="auth-login-icon">
+                        </div>
+                        <div class="navbar-auth-signup signup">
+                            <a href="#" class="auth-signup">SIGN UP</a>
+                            <img src="./img/auth-signup-icon.svg" alt="icon" class="auth-signup-icon">
+                        </div>
+                    </div>
+
+                    <div class="intro__navbar-links">
+                        <div class="intro__navbar-link">
+                            <img src="./img/envelope-icon.svg" alt="icon" class="navbar-link-icon">
+                            <a href="#" class="navbar-link">MAILING LIST</a>
+                        </div>
+                        <div class="intro__navbar-link">
+                            <img src="./img/share-icon.svg" alt="icon" class="navbar-link-icon">
+                            <a href="#" class="navbar-link">SHARE</a>
+                            <span class="navbar-link-number">12K</span>
+                        </div>
+                        <div class="intro__navbar-link">
+                            <img src="./img/cart-icon.svg" alt="icon" class="navbar-link-icon">
+                            <a href="#" class="navbar-link">CART</a>
+                            <span class="navbar-link-number">$0</span>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="intro__info">
+                    <p class="intro__info-phrase">Save The Weekend</p>
+                    <h1 class="intro__info-title">
+                        Awesome design Best Furniture For Your Interior.
+                    </h1>
+                    <button class="intro__info-btn">Explore More</button>
+                </div>
+
+                <div class="intro__example">
+                    <p class="intro__example-text">Spacial Favric Last Longer Sofa.</p>
+                    <img src="./img/intro_example-arrow.svg" alt="icon" class="intro__example-arrow">
+                </div>
+            </intro>
+
+        </div>
+
+        <div class="companies">
+            <div class="companies__wrapper">
+                <img src="./img/companies-icon_design-studio.svg" alt="icon" class="companies-icon">
+                <img src="./img/companies-icon_design&branding.svg" alt="icon" class="companies-icon">
+                <img src="./img/companies-icon_greenery.svg" alt="icon" class="companies-icon">
+                <img src="./img/companies-icon_natural.svg" alt="icon" class="companies-icon">
+                <img src="./img/companies-icon_nature.svg" alt="icon" class="companies-icon">
+                <img src="./img/companies-icon_your-company.svg" alt="icon" class="companies-icon">
+            </div>
+        </div>
+
+        <section class="products">
+            <div class="products__container">
+                <h2 class="products__title">Our Products</h2>
+                <div class="products__categories">
+                    <a href="#" class="products__category">Single Sofa</a>
+                    <a href="#" class="products__category">Living Room</a>
+                    <a href="#" class="products__category">Kitchen</a>
+                    <a href="#" class="products__category">Bed Room</a>
+                    <a href="#" class="products__category">Bath Room</a>
+                    <a href="#" class="products__category">Decorations</a>
+                    <a href="#" class="products__category">Ceramics</a>
+                </div>
+                <div class="products__cards">
+
+                    <div class="card card-01">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-01.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                    <img src="./img/card_label-quality.svg" alt="icon" class="card__label quality">
+                                    <p class="card__label availability">Out of stock</p>
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+
+                    <div class="card card-02">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-02.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+
+                    <div class="card card-03">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-03.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                    <img src="./img/card_label-quality.svg" alt="icon" class="card__label quality">
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+
+                    <div class="card card-04">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-04.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                    <img src="./img/card_label-quality.svg" alt="icon" class="card__label quality">
+                                    <p class="card__label availability">Out of stock</p>
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+
+                    <div class="card card-05">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-05.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                    <img src="./img/card_label-quality.svg" alt="icon" class="card__label quality">
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+
+                    <div class="card card-06">
+                        <div class="card__info">
+                            <div class="card__wrapper">
+                                <img src="./img/card_img-06.png" alt="img" class="card__img">
+                                <div class="card__labels">
+                                    <img src="./img/card_label-discount.svg" alt="icon" class="card__label discount">
+                                    <img src="./img/card_label-quality.svg" alt="icon" class="card__label quality">
+                                </div>
+                            </div>
+                            <div class="card__icons">
+                                <img src="./img/card_icon-zoom.svg" alt="icon" class="card__icon zoom">
+                                <img src="./img/card_icon-history.svg" alt="icon" class="card__icon history">
+                                <img src="./img/card_icon-favourite.svg" alt="icon" class="card__icon favourite">
+                                <img src="./img/card_icon-cart.svg" alt="icon" class="card__icon cart">
+                            </div>
+                        </div>
+                        <div class="card__price-wrapper">
+                            <p class="card__name">Single Sofa</p>
+                            <p class="card__price">£423.00</p>
+                        </div>
+                        <div class="star-rating">
+                            <input type="radio" name="stars" id="star-a" value="5" />
+                            <label for="star-a"></label>
+                            <input type="radio" name="stars" id="star-b" value="4" />
+                            <label for="star-b"></label>
+                            <input type="radio" name="stars" id="star-c" value="3" />
+                            <label for="star-c"></label>
+                            <input type="radio" name="stars" id="star-d" value="2" />
+                            <label for="star-d"></label>
+                            <input type="radio" name="stars" id="star-e" value="1" />
+                            <label for="star-e"></label>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="weekend">
+            <div class="weekend__info">
+                <h2 class="weekend__info-sign">50% OFF</h2>
+                <h2 class="weekend__info-title">Weekend Trendy Sofa</h2>
+                <p class="weekend__info-text">
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin.
+                </p>
+                <button class="weekend__info-btn">View items</button>
+            </div>
+        </section>
+
+        <section class="rooms__cards">
+            <div class="rooms__cards-container">
+                <div class="rooms__card left"> <!--left-->
+                    <img src="./img/card_img-living-room.png" alt="img" class="card__pic">
+                    <div class="card__info-block" id="living-room">
+                        <h3 class="card__info-block-heading">Living Room Items</h3>
+                        <p class="card__info-block-text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45  professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur.
+                        </p>
+                        <button class="card__info-block-btn">Read More</button>
+                        <img src="./img/card__info-block-label-living.svg" alt="icon" class="card__info-block-label" id="living-room">
+                    </div>
+                </div>
+
+                <div class="rooms__card right"> <!--right-->
+                    <div class="card__info-block" id="dining-room">
+                        <h3 class="card__info-block-heading">Trendy Dining Table</h3>
+                        <p class="card__info-block-text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin.
+                        </p>
+                        <button class="card__info-block-btn">View Items</button>
+                        <img src="./img/card__info-block-label-dining.svg" alt="icon" class="card__info-block-label" id="dining-room">
+                    </div>
+                    <img src="./img/card_img-dining-room.png" alt="img" class="card__pic">
+                </div>
+
+                <div class="rooms__card left"> <!--left-->
+                    <img src="./img/card_img-bedroom.png" alt="img" class="card__pic">
+                    <div class="card__info-block" id="bedroom">
+                        <h3 class="card__info-block-heading">Modern Bed</h3>
+                        <p class="card__info-block-text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin.
+                        </p>
+                        <button class="card__info-block-btn">View Items</button>
+                        <img src="./img/card__info-block-label-bed.svg" alt="icon" class="card__info-block-label" id="bedroom">
+                    </div>
+                </div>
+
+                <div class="rooms__card right"> <!--right-->
+                    <div class="card__info-block" id="kitchen">
+                        <h3 class="card__info-block-heading">Populer kitchen Items</h3>
+                        <p class="card__info-block-text">
+                            Contrary to popular belief, Lorem Ipsum is not simply random text. literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin.
+                        </p>
+                        <button class="card__info-block-btn">View Items</button>
+                        <img src="./img/card__info-block-label-kitchen.svg" alt="icon" class="card__info-block-label" id="kitchen">
+                    </div>
+                    <img src="./img/card_img-kitchen.png" alt="img" class="card__pic">
+                </div>
+            </div>
+        </section>
+
+        <section class="discount-offer">
+            <div class="discount__container">
+                <p class="discount__offer">Get 30% Off</p>
+                <p class="discount__text">
+                    Contrary to popular belief, Lorem Ipsum is not simply  years old. Richard McClintock, a Latin.
+                </p>
+                <div class="discount__subscribe-form">
+                    <input type="text" class="discount__subscribe" placeholder="Enter Your Email">
+                    <button class="discount__subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__logo-block">
+                    <img src="./img/footer_logo.svg" alt="icon" class="footer__logo">
+                    <p class="footer__text">
+                        Contrary to popular belief, Lorem Ipsum is not simply  years old Latin.
+                    </p>
+                    <div class="footer__socials">
+                        <img src="./img/footer_social-facebook-hover.svg" alt="icon" class="footer__social">
+                        <img src="./img/footer_social-instagram.svg" alt="icon" class="footer__social">
+                        <img src="./img/footer_social-twitter.svg" alt="icon" class="footer__social">
+                        <img src="./img/footer_social-youtube.svg" alt="icon" class="footer__social">
+                    </div>
+                </div>
+
+                <div class="footer__navigation">
+                    <div class="footer__navigation-explore">
+                        <h3 class="navigation__heading explore">Explore</h3>
+                        <a href="#" class="navigation-explore-link">About Us</a>
+                        <a href="#" class="navigation-explore-link">Survices</a>
+                        <a href="#" class="navigation-explore-link">Our Team</a>
+                        <a href="#" class="navigation-explore-link">Trendy</a>
+                        <a href="#" class="navigation-explore-link">Gallery</a>
+                    </div>
+
+                    <div class="footer__navigation-contacts">
+                        <h3 class="navigation__heading contacts">Contact Us</h3>
+                        <p class="navigation-contacts-address">
+                            45 Tooring High SL<br>London SA17 United kingdoom
+                        </p>
+                        <p class="navigation-contacts-email">
+                            018123456789<br>petroger456@gmail.com
+                        </p>
+                    </div>
+
+                    <div class="footer__navigation-schedule">
+                        <h3 class="navigation__heading schedule">Survice Hours</h3>
+                        <div class="work-schedule">
+
+                            <div class="work-schedule__days">
+                                <p>Mon-Fri:</p>
+                                <p>Saturday:</p>
+                                <p>Sunday:</p>
+                            </div>
+
+                            <div class="work-schedule__hours">
+                                <p>09.00am - 19.00pm</p>
+                                <p>10.00am - 18.00pm</p>
+                                <p>We are Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright">&#169 2021 Greenery. All Right Reserved</div>
+            </div>
+        </footer>
+
+    </div>
 </body>
+
 </html>
